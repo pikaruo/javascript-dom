@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="menu-first">
+        <li id="first">first</li>
+        <li id="second">second</li>
+        <li id="third">third</li>
+    </ul>
+
+    <ul id="menu-second">
+        <li>ABC</li>
+        <li>DEF</li>
+        <li>GHI</li>
+    </ul>
+
+    <script>
+        const menu1 = document.getElementById("menu-first")
+        const list = menu1.childNodes
+
+        menu1.appendChild(document.createElement("li"))
+        menu1.appendChild(document.createElement("li"))
+
+        console.info(list);
+
+    </script>
+
+</body>
+
+</html>
